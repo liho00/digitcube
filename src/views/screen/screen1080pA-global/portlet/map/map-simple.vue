@@ -37,7 +37,7 @@ export default {
       chartData:{
         alladcode:[],
         geoJson:{},
-        dept:[{code:100000,name:"全国"}, ], //{code:100000,name:"全国"},  {code:140000,name:"山西省"},
+        dept:[{code:100000,name:"Malaysia"}, ], //{code:100000,name:"Malaysia"},  {code:140000,name:"山西省"},
         visualMapColors:[$c.bll9,$c.inr5],
         mapData:[],
         pointData:[],
@@ -92,11 +92,11 @@ export default {
     },
     mapCenter(){
       const {chartData}=this,{layoutCenter}=chartData
-      return chartData.dept[chartData.dept.length-1].name=='全国'?layoutCenter[0]:layoutCenter[1]
+      return chartData.dept[chartData.dept.length-1].name=='Malaysia'?layoutCenter[0]:layoutCenter[1]
     },
     mapSize(){
       const {chartData}=this,{layoutSize}=chartData
-      return chartData.dept[chartData.dept.length-1].name=='全国'?layoutSize[0]:layoutSize[1]
+      return chartData.dept[chartData.dept.length-1].name=='Malaysia'?layoutSize[0]:layoutSize[1]
     }
   },
   watch:{
